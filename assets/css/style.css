@@ -1,0 +1,30 @@
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 300%;
+    margin-top: 40px;
+}
+
+h3 {
+    border-bottom: 3px solid black;
+    max-width: 90%;
+    margin: 20 auto;
+}
+
+.card {
+    justify-content: center;
+}
+
+.btn {
+    margin: 20 auto;
+    width: 20%;
+}
+
+.fighters-row {
+    justify-content: space-evenly;
+}
