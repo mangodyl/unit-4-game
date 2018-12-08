@@ -17,44 +17,44 @@
 
     <div id="fighter-choice">
 
-        <h3>Choose A Fighter:</h3>
+        <h3>Choose A Pokémon!:</h3>
 
         <div class="row fighters-row" id="choose-fighter-row">
 
 
             <div class="card bg-primary text-white align-items-center" style="width: 18rem;">
-                <h5 class="card-title">Card title</h5>
-                <img src=# alt="fighter 1 pic">
+                <h5 class="card-title">Pikachu</h5>
+                <img src="assets/images/Pikachu.png" alt="fighter 1 pic">
                 <div class="card-body">
             
-                    <p class="card-text">Health: <span id="fighter-1-hp"></span></p>
+                    <p class="card-text">HP: <span id="fighter-1-hp"></span></p>
                 </div>
             </div>
             
             <div class="card bg-primary text-white align-items-center" style="width: 18rem;">
-                <h5 class="card-title">Card title</h5>
-                <img src=# alt="fighter 2 pic">
+                <h5 class="card-title">Bulbasaur</h5>
+                <img src="assets/images/Bulbasaur.jpg" alt="fighter 2 pic">
                 <div class="card-body">
             
-                    <p class="card-text">Health: <span id="fighter-2-hp"></span></p>
+                    <p class="card-text">HP: <span id="fighter-2-hp"></span></p>
                 </div>
             </div>
 
             <div class="card bg-primary text-white align-items-center" style="width: 18rem;">
-                <h5 class="card-title">Card title</h5>
-                <img src=# alt="fighter 3 pic">
+                <h5 class="card-title">Squirtle</h5>
+                <img src="assets/images/Squirtle.png" alt="fighter 3 pic">
                 <div class="card-body">
             
-                    <p class="card-text">Health: <span id="fighter-3-hp"></span></p>
+                    <p class="card-text">HP: <span id="fighter-3-hp"></span></p>
                 </div>
             </div>
             
             <div class="card bg-primary text-white align-items-center" style="width: 18rem;">
-                <h5 class="card-title">Card title</h5>
-                <img src=# alt="fighter 4 pic">
+                <h5 class="card-title">Charmander</h5>
+                <img src="assets/images/Charmander.png" alt="fighter 4 pic">
                 <div class="card-body">
             
-                    <p class="card-text">Health: <span id="fighter-4-hp"></span></p>
+                    <p class="card-text">HP: <span id="fighter-4-hp"></span></p>
                 </div>
             </div>
 
@@ -67,23 +67,45 @@
 
         <h2>Combat Zone!</h2>
 
-        <h3>Available Enemies:</h3>
+        <h3>These Pokémon Want To Battle!</h3>
 
         <div class="row fighters-row" id="available-fighter-row">
         </div>
 
-        <h3>Your Fighter</h3>
+        <div class="row fighters-row">
 
-        <div class="row fighters-row" id="your-fighter-row">
-        </div>
+            
 
-        <div class="row text-center">
-            <button type="button" class="btn btn-primary btn-lg">Attack!</button>
-        </div>
+            <div class="col-md-5 fighters-row">
+                <div class="row">
+                    <h3>Your Pokémon:</h3>
+                </div>
 
-        <h3>Opponent Fighter</h3>
+                <div class="container">
+                    <div id="your-fighter-row"></div>
+                </div>
 
-        <div class="row fighters-row" id="their-fighter-row">
+            </div>
+
+            <div class="col-md-2 text-center">
+                <button type="button" class="btn btn-primary btn-lg">Attack!</button>
+                <div>
+                    <p><span></span></p>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 fighters-row">
+                <div class="row">
+                    <h3>Opponent Pokémon:</h3>
+                </div>
+                
+                <div class="container">
+                    <div id="their-fighter-row"></div>
+                </div>
+            
+            </div>
+
         </div>
 
     </div>

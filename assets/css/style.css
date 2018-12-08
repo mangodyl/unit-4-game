@@ -14,6 +14,12 @@ h3 {
     border-bottom: 3px solid black;
     max-width: 90%;
     margin: 20 auto;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
 }
 
 .card {
@@ -21,10 +27,16 @@ h3 {
 }
 
 .btn {
-    margin: 20 auto;
-    width: 20%;
+    margin: 200 auto 20 auto;
+    width: 100%;
 }
 
 .fighters-row {
     justify-content: space-evenly;
+    text-align: center;
+}
+
+#combat-zone .fighters-row .card {
+    justify-content: center;
+    margin: 0 auto;
 }
