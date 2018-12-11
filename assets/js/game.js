@@ -79,46 +79,66 @@ $(document).ready(function() {
 
     // calculating attacks
 
-    
-   
 
     $(".btn").on("click", function() {
 
-        console.log("attack");
+        if (enemyHP <= 0) {
 
-        // current enemy's attack
+            $(".currentEnemy").detach();
 
-        function enemyAttack() {
- 
-            //console.log(yourHP);
+            $(".currentEnemy").removeClass("currentEnemy");
 
-            yourHP = yourHP - $(".currentEnemy").attr('att');
-
-            //console.log(yourHP);
-
-            $(yourHPSpan).html(yourHP);
-
-        }
-
-        enemyAttack();
-    
-        // your attack
-
-        function yourAttack () {
-
-            enemyHP = ($(".currentEnemy .card-body .card-text span").text());
-
-            enemyHP = enemyHP - currentAttack;
-
-            $(".currentEnemy .card-body .card-text span").text(enemyHP);
-
-            currentAttack += 15;
-
-            console.log(enemyHP);
+            $(document).on("click", "#combat-zone .enemy", chooseEnemy);
 
         }
         
-        yourAttack();
+        else {
+
+            console.log("attack");
+
+            // current enemy's attack
+
+            function enemyAttack() {
+    
+                //console.log(yourHP);
+
+                yourHP = yourHP - $(".currentEnemy").attr('att');
+
+                //console.log(yourHP);
+
+                $(yourHPSpan).html(yourHP);
+
+            }
+
+            enemyAttack();
+        
+            // your attack
+
+            function yourAttack () {
+
+                enemyHP = ($(".currentEnemy .card-body .card-text span").text());
+
+                enemyHP = enemyHP - currentAttack;
+
+                $(".currentEnemy .card-body .card-text span").text(enemyHP);
+
+                currentAttack += 15;
+
+                console.log(enemyHP);
+
+            }
+            
+            yourAttack();
+        
+        };
+
+    });
+
+    // reset button
+
+    $(".reset-button").on("click", function reset() {
+
+        location.reload();
 
     });
 

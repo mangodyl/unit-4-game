@@ -31,6 +31,13 @@ img {
     width: 100%;
 }
 
+#button-div {
+
+    justify-content: center;
+    text-align: center;
+
+}
+
 .fighters-row {
     justify-content: space-evenly;
     text-align: center;
