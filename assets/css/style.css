@@ -26,8 +26,13 @@ img {
     justify-content: center;
 }
 
+#yourAttackText {
+
+    margin-top: 100px;
+}
+
 .btn {
-    margin: 200 auto 20 auto;
+    margin: 40 auto 20 auto;
     width: 100%;
 }
 
@@ -47,3 +52,4 @@ img {
     justify-content: center;
     margin: 0 auto;
 }
+

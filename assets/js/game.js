@@ -104,6 +104,8 @@ $(document).ready(function() {
 
                 yourHP = yourHP - $(".currentEnemy").attr('att');
 
+                $("#enemyAttackText").html($(".currentEnemy").attr('att'));
+
                 //console.log(yourHP);
 
                 $(yourHPSpan).html(yourHP);
@@ -119,6 +121,8 @@ $(document).ready(function() {
                 enemyHP = ($(".currentEnemy .card-body .card-text span").text());
 
                 enemyHP = enemyHP - currentAttack;
+
+                $("#yourAttackText").html(currentAttack);
 
                 $(".currentEnemy .card-body .card-text span").text(enemyHP);
 
