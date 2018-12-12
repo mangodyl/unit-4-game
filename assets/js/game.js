@@ -84,9 +84,10 @@ $(document).ready(function() {
 
         if (enemyHP <= 0) {
 
-            $(".currentEnemy").detach();
+            $(".currentEnemy").detach().appendTo("#defeated-fighter-row");
 
             $(".currentEnemy").removeClass("currentEnemy");
+            
 
             $(document).on("click", "#combat-zone .enemy", chooseEnemy);
 
