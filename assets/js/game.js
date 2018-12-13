@@ -155,6 +155,8 @@ $(document).ready(function() {
 
                 alert("Looks like both Pokémon fainted! You'll have to do better than that if you want to be a Pokémon master!")
 
+                location.reload();
+
             }
             else {
 
