@@ -82,18 +82,6 @@ $(document).ready(function() {
 
     $(".btn").on("click", function() {
 
-        if (enemyHP <= 0) {
-
-            $(".currentEnemy").detach().appendTo("#defeated-fighter-row");
-
-            $(".currentEnemy").removeClass("currentEnemy");
-            
-
-            $(document).on("click", "#combat-zone .enemy", chooseEnemy);
-
-        }
-        
-        else {
 
             console.log("attack");
 
@@ -134,8 +122,43 @@ $(document).ready(function() {
             }
             
             yourAttack();
+
+            // if enemy is defeated, move below and allow new enemy to be chosen
         
-        };
+            if (enemyHP <= 0) {
+
+                $(".currentEnemy").detach().appendTo("#defeated-fighter-row");
+    
+                $(".currentEnemy").removeClass("currentEnemy");
+
+                console.log($("#defeated-fighter-row .card").length);
+    
+                $(document).on("click", "#combat-zone .enemy", chooseEnemy);
+    
+            };
+
+            // alert loss when your pokemon's hp = 0, then reload page after alert is clicked
+
+            if (yourHP <= 0) {
+
+                alert("Game Over! Try fighting weaker Pokémon first to increase your attack damage!")
+
+                location.reload();
+
+            };
+
+            // check how many '.card' elements are in the defeated row, and if alert win and reset
+
+            if (($("#defeated-fighter-row .card").length) = 3) {
+
+                console.log($("#defeated-fighter-row .card").length);
+
+                alert("Congrats, champ! You beat 'em all!");
+
+                //location.reload();
+
+            }
+            
 
     });
 
