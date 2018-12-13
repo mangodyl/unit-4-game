@@ -37,7 +37,8 @@ img {
 }
 
 .col-md-2 {
-    background-color: rgba(255, 255, 255, 0.562)
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
 }
 
 #yourAttackText {
