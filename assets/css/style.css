@@ -1,13 +1,23 @@
 
+body {
+    background-image: url("../images/pokemon-background.jpg")
+}
+
 h1 {
     text-align: center;
     font-size: 400%;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h2 {
     text-align: center;
     font-size: 300%;
     margin-top: 40px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h3 {
@@ -26,6 +36,11 @@ img {
     justify-content: center;
 }
 
+.col-md-2 {
+    /** background-color: rgba(247, 244, 27, 0.53); **/
+    background-color: rgba(255, 255, 255, 0.562)
+}
+
 #yourAttackText {
 
     margin-top: 100px;
@@ -34,6 +49,11 @@ img {
 .btn {
     margin: 40 auto 20 auto;
     width: 100%;
+}
+
+.btn-xs {
+    width: 15%;
+    margin: 0;
 }
 
 #button-div {
