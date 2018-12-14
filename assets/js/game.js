@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     // Audio
 
-    var audioControl = document.getElementById("battleMusic"); 
+    var audioControl = $("#battleMusic"); 
 
     $(".play-button").on("click", function() {
         audioControl.play();
@@ -82,11 +82,6 @@ $(document).ready(function() {
     };
 
     $(document).on("click", "#combat-zone .enemy", chooseEnemy);
-
-
-    // if (enemyHP <= 0) {
-    //     $(document).on("click", "#combat-zone .enemy", chooseEnemy);
-    // }
 
 
     // calculating attacks
@@ -153,9 +148,15 @@ $(document).ready(function() {
 
             if(enemyHP <= 0 && yourHP <= 0){
 
-                alert("Looks like both Pokémon fainted! You'll have to do better than that if you want to be a Pokémon master!")
+                setTimeout(drawScreen);
 
-                location.reload();
+                function drawScreen() {
+
+                    alert("Looks like both Pokémon fainted! You'll have to do better than that if you want to be a Pokémon master!")
+
+                    location.reload();
+
+                };
 
             }
             else {
@@ -212,6 +213,3 @@ $(document).ready(function() {
 
 });
 
-
-
-// $(this).children("myClass").find("#hpText").text();
